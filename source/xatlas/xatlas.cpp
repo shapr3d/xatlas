@@ -435,9 +435,9 @@ static void *Realloc(void *ptr, size_t size, int /*tag*/, const char * /*file*/,
 
 static constexpr float kPi = 3.14159265358979323846f;
 static constexpr float kPi2 = 6.28318530717958647692f;
-static constexpr float kEpsilon = 0.0001f;
-static constexpr float kAreaEpsilon = FLT_EPSILON;
-static constexpr float kNormalEpsilon = 0.001f;
+static constexpr float kEpsilon = 1e-7f;
+static constexpr float kAreaEpsilon = 1e-9f;
+static constexpr float kNormalEpsilon = 1e-5f;
 
 static int align(int x, int a)
 {
